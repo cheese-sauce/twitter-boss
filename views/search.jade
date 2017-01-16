@@ -1,0 +1,81 @@
+extends layout
+
+block content
+  // Navigation
+  nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+    .container
+      //Title
+      .navbar-header
+        a.navbar-brand
+          span.glyphicon.glyphicon-fire(aria-hidden='true')
+          |                 TwitterBoss
+    // /.container
+  // Page Content
+  .container.mainBody
+    // Heading, search item
+
+    .row.headRow.pull-center
+      h1.page-header
+        | Twitter Stream Initiated!
+        br
+        small Enter new tags, add popular tags, stop the stream or simply enjoy these tweets.
+      br
+      input#stop.btn.btn-lg.btn-danger.stop(name='stopButton', onclick="stopStream()", type="button", value="STOP STREAM!!!")
+      //input#add.btn.btn-lg.btn-info.addEntities(name='addButton', onclick="addEntities()", type="button", value="Add Top Entities")
+      form.tweetAdd.pull-center
+        input#addTag.tweetField(type='text', name='addTag', placeholder='e.g #Tomsthebest...')
+        input#add.btn.btn-primary.addButton(name='addButton', onclick="addTweet(document.getElementById('addTag').value)", type='button', value='ADD TWEET!')
+
+    //// User Details Row
+    .row
+      h2.pull-center
+       strong RESULTS
+      hr
+      br
+
+      .row
+        h2#oldTitle.pull-center
+          strong LAST WEEK
+        .col-lg-3
+          p#oldAverage.pull-center
+            strong Average Sentiment
+          div#pieChartOld.pieChart.pull-center
+          hr
+          p.pull-center
+            strong Top 10 Entities
+          ul#oldEntities
+
+        .col-lg-9
+          .liveStream#oldScroll
+            ul#oldTweets
+      hr
+      .row
+        h2#newTitle.pull-center
+          strong LIVE STREAM
+        .col-lg-3
+          p#liveAverage.pull-center
+            strong Average Sentiment
+          div#pieChartNew.pieChart.pull-center
+          hr
+          p.pull-center
+            strong Top 10 Entities
+          ul#newEntities
+        .col-lg-9
+          .liveStream#liveScroll
+            ul#liveTweets
+      hr
+      .row
+        h2#loadTitle.pull-center
+          strong M-m-maximum Tweeterdrive
+        .col-lg-3
+          input.btn.btn-default.dontPressButton(name='loadMedUp', onclick="loadMe()", type='button', value='Dont Press ME!')
+        .col-lg-9
+          .liveStream#loadScroll
+            ul#loadTweets
+      hr
+
+    br
+    hr
+
+
+

@@ -1,0 +1,161 @@
+/*!
+ * Start Bootstrap - Portfolio Item (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item {
+
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.form-control {
+	width: 70%;
+}
+
+.mainBody{
+	
+}
+
+.mainPic{
+	border: 1px solid rgba(0,0,0,0.22);
+	border-radius: 25px;
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    max-width: 80%;
+
+}
+
+.headRow {
+	background-color: ghostWhite;
+	border: 1px solid rgba(0,0,0,0.22);
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.tweetAdd{
+	width: auto;
+	height: auto;
+	overflow: hidden; /* Clear floats */
+	margin-bottom: 20px;
+	margin-top: 20px
+}
+
+.tweetField{
+	height: auto;
+	width: 20%;
+}
+
+.addButton{
+	margin-left: 10px;
+	height: auto;
+}
+.pull-center{
+	text-align: center;
+}
+
+.pull-left{
+	text-align: left;
+}
+
+.pull-right{
+	text-align: right;
+}
+
+.map{
+	height: 400px;
+}
+
+.plain{
+	border-radius: 20px;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid rgba(0,0,0,0.22);
+	-webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+	-moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+.green{
+	background-color: #4CAF50;
+
+	border-radius: 20px;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid rgba(0,0,0,0.22);
+	-webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+	-moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.red{
+	background-color: #F44336;
+
+	border-radius: 20px;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid rgba(0,0,0,0.22);
+	-webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+	-moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.blue{
+	background-color: #2196F3;
+
+	border-radius: 20px;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid rgba(0,0,0,0.22);
+	-webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+	-moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.dontPressButton {
+	box-shadow: 2px 4px 0 2px rgba(0,0,0,0.1);
+	border: .5em solid #E84D0E;
+	font-size: 1em;
+	line-height: 1.1em;
+	color: #ffffff;
+	background-color: #ff0f3c;
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dontPressButton:hover {
+	color:#ffffff;
+	background-color: #e80007;
+	text-decoration: none;
+	border-color: #ff7536;
+
+}
+.dontPressButton:visited {
+	color:#ffffff;
+	background-color: #e81952;
+	text-decoration: none;
+
+}
+.liveStream{
+	height: 600px;
+	overflow: scroll;
+	background-color: ghostwhite;
+}
+
+.stop{
+	margin-right: 50px;
+}
+
+.pieChart{
+}

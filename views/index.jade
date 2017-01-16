@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    // Navigation Bar
+    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container
+        // Title
+        .navbar-header
+          a.navbar-brand(href='#')
+            span.glyphicon.glyphicon-fire(aria-hidden='true')
+            |                 TwitterBoss
+      // /.container
+    // Page Content
+    .container.mainBody
+      //Heading, search item
+      .row.headRow.pull-center
+          h1.page-header
+            | Twitter Boss
+            br
+            small Enter a tag to get this party started (You can add more later)
+          form.tweetAdd
+            input#hashtag.tweetField(type='text', name='hashtag', placeholder='e.g #Tomsthebest...')
+            input.btn.btn-primary.addButton(name='hashtagButton', onclick="firstTweet(document.getElementById('hashtag').value)", type='button', value='Submit!')
+          p A Quick Warning: Sheep Rating tells you how similar each tweet is to the tweets from last week, and DONT PUSH THE BUTTON
+
+
+
